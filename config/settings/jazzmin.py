@@ -20,6 +20,11 @@ JAZZMIN_SETTINGS = {
     # CSS classes that are applied to the logo above
     "site_logo_classes": None,
 
+    'custom_html': """
+        <div class="my-custom-html">
+            <p>This is some custom HTML inserted in the admin panel.</p>
+        </div>
+    """,
     # Relative path to a favicon for your site, will default to site_logo if absent (ideally 32x32 px)
     "site_icon": "back_static/images/logo.webp",
 
