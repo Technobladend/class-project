@@ -114,9 +114,14 @@ MODELTRANSLATION_DEFAULT_LANGUAGE = 'ru'
 MODELTRANSLATION_LANGUAGES = ('ru', 'en', 'es', 'ky', 'zh-cn')
 MODELTRANSLATION_CUSTOM_FIELDS = ('CKEditor5Field',)
 
-
 STATIC_URL = '/back_static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'back_static')
+
+STATICFILES_DIRS = [
+    BASE_DIR / 'back_static',
+]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 
 MEDIA_URL = '/back_media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "back_media")
